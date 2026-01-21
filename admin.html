@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Collector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-section" class="form-section">
+            <h2>Login Admin</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p class="note">Default: admin / admin123</p>
+        </div>
+
+        <!-- Email Form (akan muncul setelah login) -->
+        <div id="email-section" class="form-section hidden">
+            <h2>Tambah Email</h2>
+            <p>Email tersimpan: <span id="count">0</span>/2800</p>
+            
+            <form id="emailForm">
+                <input type="email" id="email" placeholder="Masukkan email" required>
+                <button type="submit" class="btn">Simpan Email</button>
+            </form>
+            
+            <div id="message" class="message"></div>
+            
+            <a href="admin.html" class="admin-link">Lihat Semua Email (Admin)</a>
+            <button id="logout" class="btn-logout">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
